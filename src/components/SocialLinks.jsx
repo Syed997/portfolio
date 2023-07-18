@@ -12,7 +12,7 @@ function SocialLinks() {
                 </> 
             ),
             href: 'https://linkedin.com',
-            style: 'rounded-tr-md'
+            style: 'rounded-tr-md bg-blue-600'
         },
         {
             id: 2,
@@ -22,6 +22,7 @@ function SocialLinks() {
                 </> 
             ),
             href: 'https://github.com',
+            style: 'bg-[#333333]'
             
         },
         {
@@ -32,6 +33,7 @@ function SocialLinks() {
                 </> 
             ),
             href: 'mailto:syednur.jim@gmail.com',
+            style: 'bg-[#6fc2b0]'
             
         },
         {
