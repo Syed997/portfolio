@@ -34,7 +34,7 @@ function NavBar() {
                   links.map(({ id, link }) => (<li key={id} className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 transition ease-out">{link}</li>))
             }
         </ul>
-        <div onClick={()=> setNav(!nav)} className="cursor-pointer pr-4 z-10 text-gray-500">
+        <div onClick={()=> setNav(!nav)} className="md:hidden cursor-pointer pr-4 z-10 text-gray-500">
             {
                   nav ? <FaTimes size={30} /> : <FaBars size={30} />
             }
