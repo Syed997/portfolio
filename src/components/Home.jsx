@@ -13,7 +13,7 @@ export const Home = () => {
           <div>
             <button className="text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 group">
               Portfolio
-              <span className="group-hover:rotate-90 duration-300"><MdKeyboardArrowRight/></span>
+              <span className="group-hover:rotate-90 duration-300"><MdKeyboardArrowRight size={25}/></span>
             </button>
           </div>
         </div>
@@ -24,3 +24,4 @@ export const Home = () => {
     </div>
   )
 }
+export default Home
