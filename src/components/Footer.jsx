@@ -49,11 +49,15 @@ function Footer() {
                     ))
                 }
             </div>
-            <div className="flex flex-row justify-center items-center gap-2">
-                <MdCopyright size={15}/>
-                <p >Syed Nur.A.Rabbi Jim</p>
-                <BsEmojiSmile size={12}/>
-                <p>All Rights Reserved</p>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-2">
+                  <div className="flex justify-center items-center gap-2">
+                      <MdCopyright size={15} />
+                      <p >Syed Nur.A.Rabbi Jim</p>
+                </div>
+                  <div className="flex justify-center items-center gap-2">
+                      <BsEmojiSmile size={12} />
+                      <p>All Rights Reserved</p>
+                </div>
             </div>
         </div>
     </div>
