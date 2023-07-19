@@ -38,8 +38,10 @@ function Portfolio() {
                             
                             <div className="flex items-center justify-center">
                                 
-                                <a href={hrefDemo}><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button></a>
-                                <a href={hrefCode}><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button></a>
+                                
+                                <a href={hrefDemo} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</a>
+                                <a href={hrefCode} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</a>
+                                
                             </div>
                         </div>
                     ))
