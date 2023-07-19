@@ -43,7 +43,7 @@ function Footer() {
             <div className="flex flex-row my-6">
                 {
                     socialMedia.map(({id, child, href})=>(
-                        <div key={id} className="mx-4 hover:scale-105 duration-300">
+                        <div key={id} className="mx-4 hover:scale-125 duration-300">
                             <a href={href}>{child}</a>
                         </div>
                     ))
