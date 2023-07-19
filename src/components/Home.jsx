@@ -11,7 +11,7 @@ export const Home = () => {
         <div className="flex flex-col justify-center h-full">
           <p className='text-gray-500 py-4'>Hi, I'm</p>
           <h2 className="text-5xl md:text-6xl font-bold text-white max-w-md">Syed Nur.A.Rabbi Jim</h2>
-          <p className="text-gray-500 py-4 max-w-md"><ReactTyped
+          <p className="text-gray-500 font-semibold py-4 max-w-md"><ReactTyped
             strings={["Web Developer", "Frontend Focused", "Software Engineer", "Fast Learner"]}
             typeSpeed={100}
             loop
@@ -33,7 +33,7 @@ export const Home = () => {
           </div>
         </div>
         <div>
-          <img src={heroImage} alt="my profile" className="rounded-2xl mx-auto w-2/3 md:w-3/4" />
+          <img src={heroImage} alt="my profile" className="rounded-2xl mx-auto w-2/3 md:w-3/5" />
         </div>
       </div>
     </div>

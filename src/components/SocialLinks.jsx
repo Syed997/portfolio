@@ -11,7 +11,7 @@ function SocialLinks() {
                     LinkedIn <FaLinkedin className='ml-4' size={30} />
                 </> 
             ),
-            href: 'https://linkedin.com',
+            href: 'https://www.linkedin.com/in/syed-nur-a-rabbi-jim-ab3670190/',
             style: 'rounded-tr-md bg-blue-600'
         },
         {
@@ -21,7 +21,7 @@ function SocialLinks() {
                     GitHub <FaGithub className='ml-6' size={30} />
                 </> 
             ),
-            href: 'https://github.com',
+            href: 'https://github.com/Syed997',
             style: 'bg-[#333333]'
             
         },
