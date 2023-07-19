@@ -3,6 +3,7 @@ import html from "../assets/html.png"
 import css from "../assets/css.png"
 import javascript from "../assets/javascript.png"
 import reactImage from "../assets/react.png"
+
 import github from "../assets/github.png"
 import tailwind from "../assets/tailwind.png"
 function Skills() {
@@ -42,7 +43,7 @@ function Skills() {
             src: github,
             title: 'GitHub',
             style: 'shadow-gray-400'
-        }
+        },
     ]
   return (
     <div name="skills" className="bg-gradient-to-b from-gray-800 to-black w-full h-screen">
