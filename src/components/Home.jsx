@@ -10,8 +10,8 @@ export const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
           <p className='text-gray-500 py-4'>Hi, I'm</p>
-          <h2 className="text-5xl md:text-6xl font-bold text-white max-w-md">Syed Nur.A.Rabbi Jim</h2>
-          <p className="text-gray-500 font-semibold py-4 max-w-md"><ReactTyped
+          <h2 className="text-5xl md:text-6xl font-bold max-w-md text-red-400">Syed Nur.A.Rabbi Jim</h2>
+          <p className="text-white font-semibold py-4 max-w-md"><ReactTyped
             strings={["Web Developer", "Frontend Focused", "Software Engineer", "Fast Learner"]}
             typeSpeed={100}
             loop
@@ -20,7 +20,7 @@ export const Home = () => {
             showCursor={true}
           />
           </p>
-          <div className='flex justify-between flex-col'>
+          <div className='flex justify-between flex-row md:flex-col'>
             <a href='/resume.pdf' download={true} className="text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 group lg:hidden">
               Resume
               <span className="ml-2"><BsFillPersonLinesFill size={18} /></span>
