@@ -1,20 +1,26 @@
 import React from 'react'
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
+import weather from "../assets/portfolio/weather.png";
+import calculator from "../assets/portfolio/calculator.png";
+import bank from "../assets/portfolio/bank.png";
 function Portfolio() {
     const projects = [
         {
             id: 1,
-            src: arrayDestruct
+            src: weather,
+            hrefDemo: "https://delicate-sable-00d4b2.netlify.app/",
+            hrefCode: "https://github.com/Syed997/forecast.git"
         },
         {
             id: 2,
-            src: navbar
+            src: calculator,
+            hrefDemo: "https://syed997.github.io/calculator/",
+            hrefCode: "https://github.com/Syed997/calculator.git"
         },
         {
             id: 3,
-            src: reactWeather
+            src: bank,
+            hrefDemo: "https://syed997.github.io/Banking-System/",
+            hrefCode: "https://github.com/Syed997/Banking-System.git"
         }
     ]
   return (
@@ -26,13 +32,14 @@ function Portfolio() {
             </div>
             <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8 px-12 md:px-0">
                 {
-                    projects.map(({id, src})=>(
+                    projects.map(({id, src, hrefDemo, hrefCode})=>(
                         <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-                            <img src={src} alt="" className="rounded-md duration-200 hover:scale-105" />
+                            <img src={src} alt="" className="rounded-md duration-200 hover:scale-105 w-80 h-60" />
                             
                             <div className="flex items-center justify-center">
-                                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button>
-                                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
+                                
+                                <a href={hrefDemo}><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button></a>
+                                <a href={hrefCode}><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button></a>
                             </div>
                         </div>
                     ))
