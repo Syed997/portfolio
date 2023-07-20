@@ -1,7 +1,8 @@
 import React from 'react'
 import weather from "../assets/portfolio/weather.png";
 import calculator from "../assets/portfolio/calculator.png";
-import bank from "../assets/portfolio/bank.png";
+import quiz from "../assets/portfolio/quizApp.png";
+
 function Portfolio() {
     const projects = [
         {
@@ -11,17 +12,18 @@ function Portfolio() {
             hrefCode: "https://github.com/Syed997/forecast.git"
         },
         {
+            id: 3,
+            src: quiz,
+            hrefDemo: "https://peppy-moxie-e37353.netlify.app",
+            hrefCode: "https://github.com/Syed997/quiz_web.git"
+        },
+        {
             id: 2,
             src: calculator,
             hrefDemo: "https://syed997.github.io/calculator/",
             hrefCode: "https://github.com/Syed997/calculator.git"
-        },
-        {
-            id: 3,
-            src: bank,
-            hrefDemo: "https://syed997.github.io/Banking-System/",
-            hrefCode: "https://github.com/Syed997/Banking-System.git"
         }
+        
     ]
   return (
       <div name="projects" className="bg-gradient-to-b from-black to-gray-800 w-full text-white h-full md:h-screen">
