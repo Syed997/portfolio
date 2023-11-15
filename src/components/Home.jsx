@@ -12,7 +12,7 @@ export const Home = () => {
           <p className='text-gray-500 py-4'>Hi, I'm</p>
           <h2 className="text-5xl md:text-6xl font-bold max-w-md text-red-400">Syed Nur.A.Rabbi Jim</h2>
           <p className="text-white font-semibold py-4 max-w-md"><ReactTyped
-            strings={["Web Developer", "Frontend Focused", "Software Engineer", "Fast Learner"]}
+            strings={["Software Engineer", "Web Developer", "Backend Focused",  "Programming Enthusiast"]}
             typeSpeed={100}
             loop
             backSpeed={20}
