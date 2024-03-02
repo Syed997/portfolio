@@ -3,11 +3,74 @@ import html from "../assets/html.png"
 import css from "../assets/css.png"
 import javascript from "../assets/javascript.png"
 import reactImage from "../assets/react.png"
+import docker from "../assets/docker.png"
+import laravel from "../assets/laravel.png"
+import django from "../assets/django.png"
+import java from "../assets/java.png"
+import python from "../assets/python.png"
+import nginx from "../assets/nginx.png"
+
+
 
 import github from "../assets/github.png"
 import tailwind from "../assets/tailwind.png"
 function Skills() {
     const skill = [
+        
+        {
+            id: 7,
+            src: java,
+            title: 'Java',
+            style: 'shadow-red-400'
+        },
+        {
+            id: 8,
+            src: python,
+            title: 'Python',
+            style: 'shadow-blue-300'
+        },
+        {
+            id: 3,
+            src: javascript,
+            title: 'JavaScript',
+            style: 'shadow-yellow-500'
+        },
+        {
+            id: 9,
+            src: django,
+            title: 'Django',
+            style: 'shadow-gray-400'
+        },
+        {
+            id: 10,
+            src: laravel,
+            title: 'Laravel',
+            style: 'shadow-red-500'
+        },
+        {
+            id: 4,
+            src: reactImage,
+            title: 'React',
+            style: 'shadow-blue-600'
+        },
+        {
+            id: 11,
+            src: docker,
+            title: 'Docker',
+            style: 'shadow-blue-400'
+        },
+        {
+            id: 12,
+            src: nginx,
+            title: 'Nginx',
+            style: 'shadow-green-400'
+        },
+        {
+            id: 6,
+            src: github,
+            title: 'GitHub',
+            style: 'shadow-gray-400'
+        },
         {
             id: 1,
             src: html,
@@ -20,33 +83,18 @@ function Skills() {
             title: 'CSS',
             style: 'shadow-blue-500'
         },
-        {
-            id: 3,
-            src: javascript,
-            title: 'JavaScript',
-            style: 'shadow-yellow-500'
-        },
-        {
-            id: 4,
-            src: reactImage,
-            title: 'React',
-            style: 'shadow-blue-600'
-        },
+        
+        
         {
             id: 5,
             src: tailwind,
             title: 'Tailwind',
             style: 'shadow-sky-400'
         },
-        {
-            id: 6,
-            src: github,
-            title: 'GitHub',
-            style: 'shadow-gray-400'
-        },
+        
     ]
   return (
-      <div name="skills" className="bg-gradient-to-b from-gray-800 to-black w-full h-full md:h-screen">
+      <div name="skills" className="bg-zinc-900	 w-full h-full md:h-screen">
           <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white ">
             <div >
                   <p className="text-4xl font-bold p-2 flex justify-center text-red-400">Top Skills</p>
@@ -70,3 +118,5 @@ function Skills() {
 }
 
 export default Skills
+
+// bg-gradient-to-b from-gray-800 to-black
