@@ -12,7 +12,7 @@ function About() {
                 <p>Hey, I'm Jim! Welcome to my corner of the web. Take a tour.</p>
               </div>
               <div>
-                <p>I'm a Software Engineer Intern at REDDOT Digital Limited, actively contributing to projects like the Robi Shareholder Management System (RSMS) and the IFRS website for Robi. My role involves ensuring data accuracy, troubleshooting, and developing Dockerized versions of systems. With expertise in PHP, Python, Docker, JavaScript, Laravel, Django, Odoo, and more, I thrive in both backend and frontend development. I'm passionate about delivering seamless solutions that exceed client expectations and am adept at teamwork, documentation, and communication.</p>
+                <p>I'm a Software Engineer at RedDot Digital Limited, actively contributing to projects like the Robi Shareholder Management System (RSMS) and the IFRS website for Robi. My role involves ensuring data accuracy, troubleshooting, and developing Dockerized versions of systems. With expertise in PHP, Python, Docker, JavaScript, Laravel, Django, Odoo, and more, I thrive in both backend and frontend development. I'm passionate about delivering seamless solutions that exceed client expectations and am adept at teamwork, documentation, and communication.</p>
               </div>
             </div>
             <br />
