@@ -75,7 +75,7 @@ function Portfolio() {
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 px-12 md:px-0">
                 {
                     projects.map(({id, src, name, details, hrefDemo, hrefCode, live, code})=>(
-                        <div key={id} className="shadow-md shadow-gray-600 rounded-lg bg-white/10 backdrop-blur-lg border border-white/10 duration-200 hover:scale-105 h-96 overflow-y-auto overflow-x-hidden">
+                        <div key={id} className="project-card shadow-md shadow-gray-600 rounded-lg bg-white/10 backdrop-blur-lg border border-white/10 duration-200 hover:scale-105 h-96 overflow-y-auto overflow-x-hidden">
                             {/* <img src={src} alt="" className="rounded-md duration-200 hover:scale-105 w-80 h-60" />
                             
                             <div className="flex items-center justify-center">
