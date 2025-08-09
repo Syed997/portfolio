@@ -37,7 +37,7 @@ function Footer() {
         },
     ]
   return (
-      <div className="w-full h-auto bg-zinc-900	 text-white pt-20">
+      <div className="w-full h-auto text-white pt-20">
         <div className="flex flex-col justify-center items-center">
             <div className="text-3xl pb-3">{"<s.zim/>"}</div>
             <div className="flex flex-row my-6">

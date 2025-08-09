@@ -6,6 +6,20 @@ import quiz from "../assets/portfolio/quizApp.png";
 function Portfolio() {
     const projects = [
         {
+            id: 4,
+            name: "APM (Signoz)",
+            details: "SigNoz-based observability platform, enabling real-time monitoring and performance analytics across infrastructure and applications. Developed and customized dashboards for actionable insights, and integrated telemetry at both infra and application levels. Contributed to DevOps efforts for scaling and high availability, ensuring optimal system performance. Implemented custom metrics and alerting mechanisms to improve incident response. Collaborated with cross-functional teams to enhance observability workflows and optimize resource utilization.",
+            live: "",
+            code: ""
+        },
+        {
+            id: 5,
+            name: "Workflow (processmaker 4)",
+            details: "ProcessMaker 4 workflow automation platform built on Laravel, enhanced through core-level customizations to address complex business requirements. Implemented SMS integration for real-time notifications and developed custom email integration to support advanced communication workflows. Designed and deployed multiple automated processes to streamline operations and improve efficiency. Collaborated closely with stakeholders to ensure process designs aligned with organizational goals and compliance standards. Extended the platform’s capabilities through robust, maintainable Laravel-based feature development.",
+            live: "",
+            code: ""
+        },
+        {
             id: 1,
             name: "RSMS",
             details: "Robi Shareholder Management System(RSMS), a full-stack website built by Python and Odoo framework, enabling efficient management of shareholder information, taxes and finances. Collaborated on both backend and frontend development, ensuring seamless usability and regulatory compliance. Played a key role in deploying the system using Docker and Docker Compose.",
@@ -50,7 +64,9 @@ function Portfolio() {
         
     // ]
   return (
-      <div name="projects" className=" bg-zinc-900	 w-full text-white h-full md:h-screen">
+      <div name="projects" className="w-full text-white py-16 relative">
+        {/* Subtle grid pattern for glass effect background */}
+        <div className="absolute inset-0 bg-[radial-gradient(#444_1px,transparent_1px)] [background-size:16px_16px] opacity-10"></div>
         <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
             <div className="pb-8">
                   <p className="text-4xl font-bold flex justify-center text-red-400">Projects</p>
@@ -59,7 +75,7 @@ function Portfolio() {
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 px-12 md:px-0">
                 {
                     projects.map(({id, src, name, details, hrefDemo, hrefCode, live, code})=>(
-                        <div key={id} className="shadow-md shadow-gray-600 rounded-lg bg-sky-950 duration-200 hover:scale-105">
+                        <div key={id} className="shadow-md shadow-gray-600 rounded-lg bg-white/10 backdrop-blur-lg border border-white/10 duration-200 hover:scale-105 h-96 overflow-y-auto overflow-x-hidden">
                             {/* <img src={src} alt="" className="rounded-md duration-200 hover:scale-105 w-80 h-60" />
                             
                             <div className="flex items-center justify-center">

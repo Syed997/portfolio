@@ -2,23 +2,41 @@ import React from 'react'
 
 function About() {
   return (
-    <div name="about" className="w-full h-full md:h-screen bg-zinc-900	 text-white">
-          <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center items-center w-full h-full">
-            <div className='pb-8'>
-          <p className="text-4xl font-bold hidden md:flex justify-center text-red-400">About Syed</p>
-            </div>
-        <div className="w-full grid sm:grid-cols-2 gap-8 px-4">
-              <div className="sm:text-right text-4xl font-semibold">
-                <p>Hey, I'm Jim! Welcome to my corner of the web. Take a tour.</p>
-              </div>
-              <div>
-                <p>I'm a Software Engineer at RedDot Digital Limited, actively contributing to projects like the Robi Shareholder Management System (RSMS) and the IFRS website for Robi. My role involves ensuring data accuracy, troubleshooting, and developing Dockerized versions of systems. With expertise in PHP, Python, Docker, JavaScript, Laravel, Django, Odoo, and more, I thrive in both backend and frontend development. I'm passionate about delivering seamless solutions that exceed client expectations and am adept at teamwork, documentation, and communication.</p>
-              </div>
-            </div>
-            <br />
+    <div name="about" className="w-full h-full md:h-screen text-white">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center items-center w-full h-full">
+        <div className="pb-8">
+          <p className="text-4xl font-bold hidden md:flex justify-center text-red-400">
+            About Syed
+          </p>
         </div>
+        <div className="w-full grid sm:grid-cols-2 gap-8 px-4">
+          <div className="sm:text-right text-4xl font-semibold">
+            <p>Hey, I'm Jim! Welcome to my corner of the web. Take a tour.</p>
+          </div>
+          <div>
+            <p>
+              I am a Software Engineer at RedDot Digital Limited, contributing
+              to diverse, high-impact projects including the Robi Shareholder
+              Management System (RSMS), the IFRS website for Robi, a customized
+              ProcessMaker 4 (Laravel) workflow automation platform, and a
+              SigNoz-based observability platform. My work spans full-stack
+              development, core-level system customizations, and DevOps
+              practices such as Dockerization and scalable deployments. I have
+              implemented SMS and custom email integrations, developed automated
+              business processes, and built real-time monitoring dashboards with
+              integrated infrastructure and application telemetry. Proficient in
+              PHP, Python, JavaScript, TypeScript, Laravel, Django, Odoo,
+              Node.js, React, Next.js, Docker, and related technologies, I excel
+              in delivering efficient, scalable, and maintainable solutions. I
+              am committed to exceeding client expectations through clean code,
+              effective collaboration, and meticulous documentation.
+            </p>
+          </div>
+        </div>
+        <br />
+      </div>
     </div>
-  )
+  );
 }
 
 export default About
