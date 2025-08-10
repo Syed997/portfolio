@@ -49,20 +49,17 @@ function Experience() {
         
         <div className="space-y-12">
           {companies.map((company, companyIndex) => (
-            <div key={companyIndex} className="flex">
-              {/* Company section - vertically centered */}
-              <div className="w-1/3 flex flex-col justify-center items-end pr-8">
-                <div className="text-right">
+            <div key={companyIndex} className="grid grid-cols-2 gap-8">
+              {/* Company section - right aligned */}
+              <div className="flex flex-col items-end justify-center">
+                <div className="text-right pr-8">
                   <h3 className="text-2xl font-bold">{company.company}</h3>
                   <p className="text-gray-400">{company.location}</p>
                 </div>
               </div>
               
-              {/* Vertical separator line */}
-              <div className="border-r border-gray-600 h-full mx-4"></div>
-              
-              {/* Roles section */}
-              <div className="w-2/3 pl-8">
+              {/* Roles section with left border */}
+              <div className="border-l-2 border-red-400 pl-8">
                 {company.roles.map((role) => (
                   <div key={role.id} className="mb-8">
                     <h3 className="text-xl font-semibold text-red-400">{role.title}</h3>
