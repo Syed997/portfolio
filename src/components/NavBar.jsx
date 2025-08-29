@@ -26,7 +26,7 @@ function NavBar() {
         }
     ];
   return (
-    <div className="flex justify-between items-center w-full h-16 text-white sticky top-0 px-4 bg-white/10 backdrop-blur-md border-b border-white/5 z-50">
+    <div className="flex justify-between items-center w-full h-16 text-white fixed top-0 left-0 right-0 px-4 bg-white/10 backdrop-blur-md border-b border-white/5 z-50">
         <div>
             {/* <h1 className="text-3xl font-signature ml-2">S. Jim</h1> */}
             <h1 className="text-3xl ml-2">{"<s.zim/>"}</h1>
