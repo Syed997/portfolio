@@ -41,17 +41,18 @@ function NavBar() {
                   nav ? <FaTimes size={30} /> : <FaBars size={30} />
             }
         </div>
-        {
-            nav && (
-                  <ul className="flex flex-col justify-center items-center w-full h-screen absolute top-0 left-0 bg-gradient-to-b from-black to-gray-800 text-gray-500">
-                      {
-                          links.map(({ id, link }) => (<li key={id} className="px-4 cursor-pointer capitalize py-6 text-4xl">
-                              <Link onClick={()=>setNav(!nav)} to={link} smooth duration={500}>{link}</Link>
-                          </li>))
-                      }
-                  </ul>
-            )
-        }
+        <div className={`fixed inset-0 z-40 transition-opacity duration-300 ease-in-out ${nav ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+            <div className="absolute inset-0 bg-black/20 backdrop-blur-sm" onClick={() => setNav(false)}></div>
+        </div>
+        <ul className={`flex flex-col absolute top-16 right-1 w-35 bg-black/60 backdrop-blur-2xl rounded-lg border border-white/10 shadow-lg transform transition-all duration-300 ease-in-out z-50 ${nav ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
+            {
+                links.map(({ id, link }) => (
+                    <li key={id} className="px-4 cursor-pointer capitalize py-3 text-base text-white hover:bg-white/10 transition-colors">
+                        <Link onClick={()=>setNav(!nav)} to={link} smooth duration={500}>{link}</Link>
+                    </li>
+                ))
+            }
+        </ul>
     </div>
   )
 }
